@@ -103,7 +103,7 @@ jobs:
         with:
           context: ./frontend/
           push: true
-          tags: plipp/taski_frontend:latest
+          tags: phlipp/taski_frontend:latest
   build_gateway_and_push_to_docker_hub:
     name: Push gateway Docker image to DockerHub
     runs-on: ubuntu-latest
@@ -122,5 +122,4 @@ jobs:
         with:
           context: ./gateway/
           push: true
-          # Тут вместо username должен быть ваш логин на Docker Hub
-          tags: plipp/taski_gateway:latest
+          tags: phlipp/taski_gateway:latest
